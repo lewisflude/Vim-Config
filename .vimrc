@@ -1,7 +1,9 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'kien/ctrlp.vim'
 Plug 'altercation/vim-colors-solarized'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -16,6 +18,9 @@ if has('gui_running')
 else
 	set background=dark
 endif
+
+" Make comments italic
+highlight Comment cterm=italic
 
 " Set some preferences
 set autoindent
